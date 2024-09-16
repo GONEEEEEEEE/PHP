@@ -1,0 +1,178 @@
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 23px;
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0.8;
+}
+
+#wp-form-login {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    padding: 30px 20px 20px 20px;
+    margin: 150px auto;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+#wp-form-login h1#page-title {
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+#form-login input[type="text"],
+#form-login input[type="password"],
+#form-login input[type="email"] {
+    display: block;
+    padding: 10px 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border: none;
+    background: rgb(255, 255, 255, 0.2);
+    border-radius: 3px;
+    font-size: 18px;
+    color: #34495e;
+}
+#form-login input::placeholder {
+    color: #34495e;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#form-login input[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    color: #34495e;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    padding: 10px 0px;
+    margin: 15px 0px 10px;
+}
+
+#lost-pass {
+    color: #34495e;
+    text-decoration: underline;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#btn-login {
+    cursor: pointer;
+}
+
+/* ======= Toast message ======== */
+
+#toast {
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    z-index: 999999;
+}
+
+.toast {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 20px 0;
+    min-width: 400px;
+    max-width: 450px;
+    border-left: 4px solid;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.08);
+    transition: all linear 0.3s;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(calc(100% + 32px));
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.toast--success {
+    border-color: #47d864;
+}
+
+.toast--success .toast__icon {
+    color: #47d864;
+}
+
+.toast--info {
+    border-color: #2f86eb;
+}
+
+.toast--info .toast__icon {
+    color: #2f86eb;
+}
+
+.toast--warning {
+    border-color: #ffc021;
+}
+
+.toast--warning .toast__icon {
+    color: #ffc021;
+}
+
+.toast--error {
+    border-color: #ff623d;
+}
+
+.toast--error .toast__icon {
+    color: #ff623d;
+}
+
+.toast + .toast {
+    margin-top: 24px;
+}
+
+.toast__icon {
+    font-size: 24px;
+}
+
+.toast__icon,
+.toast__close {
+    padding: 0 16px;
+}
+
+.toast__body {
+    flex-grow: 1;
+}
+
+.toast__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+.toast__msg {
+    font-size: 14px;
+    color: #888;
+    margin-top: 6px;
+    line-height: 1.5;
+}
+
+.toast__close {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}

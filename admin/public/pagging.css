@@ -1,0 +1,32 @@
+/* Style pagging */
+ul.pagging {
+    float: right;
+    list-style: none;
+    margin-top: 23px;
+}
+
+ul.pagging li {
+    float: left;
+    padding: 0px 2px;
+    background-color: #fff !important;
+}
+
+ul.pagging li a {
+    display: block;
+    padding: 5px 6px;
+    color: #333;
+    border: 1px solid #dedede;
+    
+}
+
+ul#list-paging li.active a{
+    
+    border: 1px solid #f00;
+    color: #f00;
+}
+
+ul.pagging li a.disabled {
+    pointer-events: none;
+    /* cursor: pointer; */
+    color: gainsboro;
+}

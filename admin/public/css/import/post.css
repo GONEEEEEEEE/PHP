@@ -1,0 +1,9 @@
+/* create vs update post */
+#wp-post .section-detail input[type="text"] {
+    width: 100% !important;
+}
+
+/* #descc .cke_contents{
+    height: 200px !important;
+} */
+

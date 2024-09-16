@@ -1,0 +1,68 @@
+# RewriteEngine On
+
+# Cấu trúc trang
+# RewriteRule ^gioi-thieu.html$ index.php?mod=page&controller=index&action=index&id=1 [L]
+# RewriteRule ^lien-he.html$ index.php?mod=page&controller=index&action=index&id=2 [L]
+# RewriteRule ^([a-zA-Z0-9_-]+)-([0-9]+).html$ ?mod=page&controller=index&action=index&id=$2
+
+
+# Cấu trúc bài viết
+# RewriteRule ^bai-viet/([a-zA-Z0-9_-]+)-([0-9]+).html$ index.php?mod=home&controller=index&action=detail&id=$2
+
+# RewriteEngine on
+
+# RewriteRule ^trang-chu.html$ ?mod=home
+
+# RewriteRule ^san-pham/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ ?mod=products&action=index&product_id=$2
+# RewriteRule ^san-pham/([a-zA-Z0-9_-]+).html$ ?mod=products&action=categoryProduct&category_slug=$1
+
+# RewriteRule ^san-pham/([a-zA-Z0-9_-]+).html&page=([0-9]+)$ ?mod=products&action=categoryProduct&category_slug=$1&page=$2
+
+# RewriteRule ^san-pham/([a-zA-Z0-9_-]+).html?sort=([a-zA-Z0-9_-]+)$ ?mod=products&action=categoryProduct&category_slug=$1&sort=$2
+
+
+# # search
+# RewriteRule ^search=(.*)$ ?mod=products&action=categoryProduct&search=$1 [L,QSA]
+
+
+
+
+RewriteEngine On
+
+# Quy tắc cho trang chủ
+RewriteRule ^trang-chu.html$ ?mod=home [L]
+
+RewriteRule ^bai-viet.html$ ?mod=posts [L]
+
+RewriteRule ^bai-viet.html&page=([0-9]+)$ ?mod=posts&page=$1 [L]
+
+RewriteRule ^bai-viet/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ ?mod=posts&action=detail&slug=$1&post_id=$2 [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+).html$ ?mod=pages&action=index&slug=$1 [L,QSA]
+
+# Quy tắc cho sản phẩm cụ thể
+RewriteRule ^san-pham/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ ?mod=products&action=index&product_id=$2 [L]
+
+# Quy tắc cho danh mục sản phẩm
+RewriteRule ^san-pham/([a-zA-Z0-9_-]+)\.html$ ?mod=products&action=categoryProduct&category_slug=$1 [L,QSA]
+
+RewriteRule ^gio-hang$ ?mod=cart&action=index [L,QSA]
+
+# Quy tắc cho thêm vào giỏ hàng
+
+
+RewriteRule ^them-vao-gio-hang/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ ?mod=cart&action=addCart&product_id=$2 [L]
+
+# Quy tắc cho mua ngay
+RewriteRule ^mua-ngay/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ ?mod=cart&action=addCart&product_id=$2 [L,QSA]
+
+RewriteRule ^xoa-san-pham/([a-zA-Z0-9_-]+)-([0-9]+)\.html$ ?mod=cart&action=deleteCart&product_id=$2 [L,QSA]
+RewriteRule ^xoa-gio-hang$ ?mod=cart&action=deleteAll [L,QSA]
+
+RewriteRule ^thanh-toan$ ?mod=cart&action=checkOut [L,QSA]
+
+# Quy tắc cho phân trang
+RewriteRule ^san-pham/([a-zA-Z0-9_-]+)\.html&page=([0-9]+)$ ?mod=products&action=categoryProduct&category_slug=$1&page=$2 [L,QSA]
+
+# Quy tắc cho tìm kiếm
+RewriteRule ^search=(.*)$ ?mod=products&action=categoryProduct&search=$1 [L,QSA]

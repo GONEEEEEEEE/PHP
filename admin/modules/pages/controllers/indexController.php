@@ -8,12 +8,12 @@ function construct()
 
 // Giao diện hiển thị
 function indexAction()
-{
+{  
    global $num_page, $page, $status;
    // Kiểm tra xem $query và $status có tồn tại hay không
    $query = isset($_GET['s']) ? $_GET['s'] : '';
    $status = isset($_GET['status']) ? $_GET['status'] : '';
-
+   
    // ==========PAGGING===============
 
    $page = isset($_GET['page']) ? (int) $_GET['page'] : 1;

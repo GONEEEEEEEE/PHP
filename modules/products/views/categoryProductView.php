@@ -137,7 +137,7 @@
                 <div class="section-head">
                     <h3 class="section-title">Danh mục sản phẩm</h3>
                 </div>
-                <div class="secion-detail">
+                <div class="section-detail">
                     <ul class="list-item">
                         <?php
                         echo array_categories($result_menu);

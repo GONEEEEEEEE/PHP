@@ -40,8 +40,8 @@
 <?php get_header(); ?>
 <div id="main-content-wp" class="clearfix detail-product-page">
     <div class="wp-inner">
-        <div class="secion" id="breadcrumb-wp">
-            <div class="secion-detail">
+        <div class="section" id="breadcrumb-wp">
+            <div class="section-detail">
                 <ul class="list-item clearfix">
                     <li>
                         <a href="trang-chu.html" title="">Trang chủ</a>
@@ -176,7 +176,7 @@
                 <div class="section-head">
                     <h3 class="section-title">Danh mục sản phẩm</h3>
                 </div>
-                <div class="secion-detail">
+                <div class="section-detail">
                     <ul class="list-item">
                         <?php
                         echo array_categories($result_menu);

@@ -55,10 +55,25 @@
                                     <li>
                                         <a href="<?php echo $v['page_slug'] ?>.html"
                                             title=""><?php echo $v['page_title'] ?></a>
+
                                     </li>
                                     <?php
                                 }
                                 ?>
+
+                            <?php if (is_login()) { ?>
+    <li>
+        <a href="#" title="Trang cá nhân">Xin Chào, <?php echo $_SESSION['user_login']; ?></a>
+    </li>
+    <li>
+        <a href="?mod=users&action=logout" title="Đăng xuất">Đăng xuất</a>
+    </li>
+<?php } else { ?>
+    <li>
+        <a href="?mod=users&action=login" title="Đăng nhập">Đăng nhập</a>
+    </li>
+<?php } ?>
+
                             </ul>
                         </div>
                     </div>
@@ -82,7 +97,7 @@
                         <div id="action-wp" class="fl-right">
                             <div id="advisory-wp" class="fl-left">
                                 <span class="title">Tư vấn</span>
-                                <span class="phone">0987.654.321</span>
+                                <span class="phone">0766.635.399</span>
                             </div>
                             <div id="btn-respon" class="fl-right"><i class="fa fa-bars" aria-hidden="true"></i></div>
                             <a href="gio-hang" title="giỏ hàng" id="cart-respon-wp" class="fl-right">

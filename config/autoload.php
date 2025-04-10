@@ -32,7 +32,7 @@ $autoload['lib'] = array('email');
  */
 
 
-$autoload['helper'] = array('data', 'format','url', 'redirect_to', "pagging");
+$autoload['helper'] = array('data', 'format','url', 'redirect_to', 'pagging','users');
 
 
 

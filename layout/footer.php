@@ -15,13 +15,13 @@
                 <h3 class="title">Thông tin cửa hàng</h3>
                 <ul class="list-item">
                     <li>
-                        <p>106 - Trần Bình - Cầu Giấy - Hà Nội</p>
+                        <p>08 - NGUYỄN VĂN BÉ - QUY NHƠN - BÌNH ĐỊNH</p>
                     </li>
                     <li>
-                        <p>0987.654.321 - 0989.989.989</p>
+                        <p>0766.635.399 - 0989.989.989</p>
                     </li>
                     <li>
-                        <p>vshop@gmail.com</p>
+                        <p>anhchanghotran85@gmail.com</p>
                     </li>
                 </ul>
             </div>
@@ -57,7 +57,7 @@
     <div id="foot-bot">
         <div class="wp-inner">
             <p id="copyright">© Bản quyền thuộc về <a style="color: white"
-                    href="https://www.facebook.com/nguyenxuantoan2004" target="_blank">Nguyễn Xuân Toàn</a></p>
+                    href="https://www.facebook.com/hoang.huy.56863/" target="_blank">Trần Huy Hoàng</a></p>
         </div>
     </div>
 </div>

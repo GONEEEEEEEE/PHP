@@ -11,7 +11,7 @@
  * 
  */
 
-$config['base_url'] = "http://localhost/AUNITOP/back-end/PhpMaster/project/ismart.com/admin";
+$config['base_url'] = "http://localhost/ismart.com2/ismart.com/admin/";
 
 
 $config['default_module'] = 'pages';
